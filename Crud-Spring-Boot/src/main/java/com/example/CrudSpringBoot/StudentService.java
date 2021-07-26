@@ -56,7 +56,8 @@ public class StudentService {
     //        }
         studentRepository.save(student);
     }
-//delete student
+
+    //delete a student
     public void deleteStudent(String id) {
         //students.removeIf(t->t.getId().equals(id));
         studentRepository.deleteById(id);
