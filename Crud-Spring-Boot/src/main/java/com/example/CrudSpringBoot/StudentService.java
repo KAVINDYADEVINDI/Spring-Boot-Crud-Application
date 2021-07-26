@@ -22,7 +22,8 @@ public class StudentService {
 //            new Student(3,"kavindya","CS",2000)
 //
 //    ));
-    //get all students
+
+    //get all students (calling service)
     public List<Student> getAllStudents(){
         //return  students;
         List<Student> students=new ArrayList<>();
