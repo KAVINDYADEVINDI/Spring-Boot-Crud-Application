@@ -32,7 +32,7 @@ public class StudentService {
         return  students;
     }
 
-    //get a student using filtered id
+    //get a student using filtered by id
     public Student getStudent(String id){
        //return students.stream().filter(t->t.getId().equals(id)).findFirst().get();
         return studentRepository.findById(id).get();
