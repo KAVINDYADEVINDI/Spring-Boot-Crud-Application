@@ -1,21 +1,32 @@
+package com.example.CrudSpringBoot;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+//create student object
+@Entity
 public class Student {
-    private Integer id;
+    @Id
+    private String id;
     private  String name;
     private String course;
-    private  Integer fee;
+    private  String fee;
 
-    public Student(Integer id, String name, String course, Integer fee) {
+    public Student(){
+
+    }
+
+    public Student(String id, String name, String course, String fee) {
         this.id = id;
         this.name = name;
         this.course = course;
         this.fee = fee;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -35,11 +46,11 @@ public class Student {
         this.course = course;
     }
 
-    public Integer getFee() {
+    public String getFee() {
         return fee;
     }
 
-    public void setFee(Integer fee) {
+    public void setFee(String fee) {
         this.fee = fee;
     }
 }
